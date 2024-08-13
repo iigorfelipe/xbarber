@@ -11,6 +11,7 @@ import { getServerSession } from 'next-auth';
 import { authOptions } from './_lib/auth';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import { getConfirmedBookings } from './_data/get-confirmed-bookings';
 
 const Home = async () => {
   const session = await getServerSession(authOptions);
@@ -20,33 +21,14 @@ const Home = async () => {
       name: 'desc',
     },
   });
-  const confirmedBookings = session?.user
-    ? await db.booking.findMany({
-        where: {
-          userId: (session.user as any).id,
-          date: {
-            gte: new Date(),
-          },
-        },
-        include: {
-          service: {
-            include: {
-              barbershop: true,
-            },
-          },
-        },
-        orderBy: {
-          date: 'asc',
-        },
-      })
-    : [];
+  const confirmedBookings = await getConfirmedBookings();
 
   return (
     <div>
-
+      {/* header */}
       <Header />
       <div className="p-5">
-
+        {/* TEXTO */}
         <h2 className="text-xl font-bold">Olá, {session?.user ? session.user.name : 'bem vindo'}!</h2>
         <p>
           <span className="capitalize">{format(new Date(), 'EEEE, dd', { locale: ptBR })}</span>
@@ -54,10 +36,12 @@ const Home = async () => {
           <span className="capitalize">{format(new Date(), 'MMMM', { locale: ptBR })}</span>
         </p>
 
+        {/* BUSCA */}
         <div className="mt-6">
           <Search />
         </div>
 
+        {/* BUSCA RÁPIDA */}
         <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
           {quickSearchOptions.map((option) => (
             <Button className="gap-2" variant="secondary" key={option.title} asChild>
@@ -69,6 +53,7 @@ const Home = async () => {
           ))}
         </div>
 
+        {/* IMAGEM */}
         <div className="relative mt-6 h-[150px] w-full">
           <Image
             alt="Agende nos melhores com FSW Barber"
@@ -82,6 +67,7 @@ const Home = async () => {
           <>
             <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">Agendamentos</h2>
 
+            {/* AGENDAMENTO */}
             <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
               {confirmedBookings.map((booking) => (
                 <BookingItem key={booking.id} booking={JSON.parse(JSON.stringify(booking))} />
