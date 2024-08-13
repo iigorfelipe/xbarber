@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## [xBarber - App link](https://xbarber-fair.vercel.app/)
 
-## Getting Started
+## Imagens
+<img src="https://github.com/user-attachments/assets/50187433-5b31-4932-bd19-1aa38f427be5" alt="mobile-app" width="260px" >
+<img src="https://github.com/user-attachments/assets/72afa074-e7c6-43ed-ad06-69faa8bbdc9b" alt="mobile-app" width="260px" >
+<img src="https://github.com/user-attachments/assets/39f2b020-156b-43ac-980b-648788bae1ce" alt="mobile-app" width="260px" >  
+<img src="https://github.com/user-attachments/assets/a01c6063-596b-4d3b-a712-0c7d5bf41ac0" alt="mobile-app" width="260px" >
+<img src="https://github.com/user-attachments/assets/1080fea6-404c-4824-ac7a-a8b1c764b205" alt="mobile-app" width="260px" >
+<img src="https://github.com/user-attachments/assets/c3424efa-1f3a-4c78-9730-27b35e09ed91" alt="mobile-app" width="260px" >
 
-First, run the development server:
+## Vídeo:
+https://github.com/user-attachments/assets/a1a03a8a-ff50-4457-b28e-532761d508d5
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📄 Sobre o Projeto: xBarber
+O xBarber é um aplicativo mobile que conecta usuários a barbearias próximas, permitindo encontrar, filtrar e reservar serviços de forma prática e eficiente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+- **Next.js**
+- **React.js**
+- **PostgreSQL**
+- **Tailwind CSS**
+- **Prisma**
+- **Node.js**
+- **ShadCN**
+- **TypeScript**
+- **JavaScript**
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Autenticação com Conta Google:** Login rápido e seguro usando sua conta Google.
+- **Descoberta de Barbearias:** Explore uma lista diversificada de barbearias, incluindo as mais recomendadas e populares.
+- **Filtragem Inteligente:** Encontre barbearias por nome ou pelos serviços oferecidos, facilitando a busca pelo serviço ideal.
+- **Detalhes Completos das Barbearias:** Acesse informações detalhadas de cada barbearia, como serviços disponíveis, localização, fotos, avaliações, descrição e contato.
+- **Reservas Online:** Agende seu serviço preferido com a opção de escolher data e hora.
+- **Gerenciamento de Reservas:** Visualize todas as suas reservas futuras e passadas em um só lugar.
+- **Cancelamento de Reservas:** Cancelamento simples e rápido das suas reservas, caso necessário.
 
-## Deploy on Vercel
+## Autor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+@Igor Felipe
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Linkedin Badge](https://img.shields.io/badge/-LinkdedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/iigor-felipe/)](https://www.linkedin.com/in/iigor-felipe/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:iigorfelipe@gmail.com)](mailto:iigorfelipe@gmail.com)
